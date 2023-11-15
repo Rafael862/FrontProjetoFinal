@@ -5,10 +5,19 @@ export default createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    font-size: 62.5%;
+}
 body{
     background-color: ${({theme}) => theme.COLORS.BACKGROUND};
     color: ${({theme}) => theme.COLORS.BACKGROUND};
     -webkit-font-smoothing: antialiased;
+}
+body, input, button, textarea{
+font-family: 'Poppins', sans-serif;
+//font-family: 'Roboto', sans-serif;
+font-size: 16px;
+outline: none;
 }
 a{
     text-decoration: none;
