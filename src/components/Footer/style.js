@@ -10,6 +10,8 @@ padding: 3rem 2.7rem;
 font-weight: bold;
 
 > span{
+    display: flex;
+    justify-content: center;
     color: ${({ theme }) => theme.COLORS.LIGHT_700};
     > svg{
     margin-right: .8rem;
