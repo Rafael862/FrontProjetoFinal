@@ -20,8 +20,8 @@ export default {
         DARK_1000: "#192227",
 
         GRADIENTS_100: "#993399",
-        GRADIENTS_200: "#993399",
-
+        GRADIENTS_200: "#091E26",
+       
         TOMATO_100: "#750310",
         TOMATO_200: "#92000E",
         TOMATO_300: "#AB222E",
@@ -30,8 +30,8 @@ export default {
         CARROT_100: "#FBA94C",
 
         MINT_100: "#04D361",
-        CAKE_100: "#82F3FF",
-        CAKE_200: "#065E7C"
+        CAKE_100: "#065E7C",
+        CAKE_200: "#82F3FF"
 
     }
 };

@@ -8,6 +8,8 @@ height: 7.7rem;
 width: 100%;
 padding: 3rem 2.7rem;
 font-weight: bold;
+position: fixed;
+bottom: 0;
 
 > span{
     display: flex;
