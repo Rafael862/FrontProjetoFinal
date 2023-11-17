@@ -9,9 +9,9 @@ export default createGlobalStyle`
     font-size: 62.5%;
 }
 body{
-    background-color: ${({theme}) => theme.COLORS.BACKGROUND};
-    color: ${({theme}) => theme.COLORS.BACKGROUND};
+    background-color: ${({theme}) => theme.COLORS.DARK_100};
     -webkit-font-smoothing: antialiased;
+    text-align: center;
 }
 body, input, button, textarea{
 //font-family: 'Poppins', sans-serif;
