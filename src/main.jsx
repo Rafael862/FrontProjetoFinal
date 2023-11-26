@@ -1,23 +1,29 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-
-import theme from './styles/theme';
+import React, { useState } from 'react'
+import ReactDOM from 'react-dom/client'
 import GlobalStyles from './styles/global';
+import { dark, light } from './styles/themes';
+import { ThemeProvider } from 'styled-components';
 
-import {Details} from './pages/Details';
-import {ThemeProvider} from 'styled-components';
-import {Footer} from './components/Footer';
-import {Card} from './components/Card';
-import {Banner} from './components/Banner';
+import { AuthProvider } from './hooks/auth';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <ThemeProvider theme={theme}>
-      <GlobalStyles/>
-    <Details />
-    <Banner />
-    <Card/>
-    <Footer/>
-    </ThemeProvider>
-  </React.StrictMode>,
-)
+import { Routes } from './routes';
+
+function App() { 
+  const [selectedTheme, setSelectedTheme] = useState(dark);
+
+  return (
+    <React.StrictMode>
+      <ThemeProvider theme={selectedTheme === dark ? dark : light}>
+        <GlobalStyles />
+        <AuthProvider>
+          <Routes
+            setSelectedTheme={setSelectedTheme}
+            selectedTheme={selectedTheme}
+          />
+        </AuthProvider>
+      </ThemeProvider>
+    </React.StrictMode>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);

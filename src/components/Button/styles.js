@@ -1,18 +1,41 @@
-import styled from 'styled-components';
+import styled, { css } from "styled-components";
 
 export const Container = styled.button`
-    width: 100%;
-    background-color: ${({ theme}) => theme.COLORS.TOMATO_100};
-    color: ${({ theme}) => theme.COLORS.LIGHT_100};
-    height: 5.6rem;
-    border: 0;
-    padding: 0 16;
-    margin-top: 1.6rem;
-    border-radius: 10px;
-    font-weight: 500;
+  width: 100%;
+  padding: 1rem 0;
 
-    &:disabled{
-        opacity: 0.5;
-    }
+  background-color: ${({ theme }) => theme.COLORS.TOMATO_100};
 
+  border: none;
+  border-radius: 5px;
+
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+  color: ${({ theme }) => theme.COLORS.LIGHT_100};
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .8rem;
+
+  .icon {
+    fill: ${({ theme }) => theme.COLORS.LIGHT_100};
+  }
+
+  ${(props) => props.tomato100 && css`
+    background-color: ${({ theme }) => theme.COLORS.TOMATO_100};
+  `}
+
+  ${(props) => props.tomato200 && css`
+    background-color: ${({ theme }) => theme.COLORS.TOMATO_200};
+  `}
+
+  ${(props) => props.tomato400 && css`
+    background-color: ${({ theme }) => theme.COLORS.TOMATO_400};
+  `}
+
+  ${(props) => props.dark800 && css`
+    background-color: ${({ theme }) => theme.COLORS.DARK_800};
+  `}
 `;
