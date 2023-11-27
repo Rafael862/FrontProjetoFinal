@@ -18,7 +18,6 @@ export function NewFood({ selectedTheme, setSelectedTheme }) {
   const [foods, setFoods] = useState([]);
   const searchTitle = new URLSearchParams(location.search).get("title");
   const [search, setSearch] = useState(searchTitle || "");
-
   const [imageFile, setImageFile] = useState(null);
   const [fileMessage, setFileMessage] = useState("Selecione a imagem");
   const [title, setTitle] = useState("");

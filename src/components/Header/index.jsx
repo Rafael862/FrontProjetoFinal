@@ -19,6 +19,7 @@ import logo from '../../assets/logo.svg';
 import searchIcon from '../../assets/icon-search.svg';
 
 export function Header({ selectedTheme, setSelectedTheme }) {
+  
   const { user } = useContext(AuthContext);
   const { signOut } = useAuth();
   const { setSearch } = useContext(SearchContext);

@@ -214,7 +214,6 @@ export function Order({ selectedTheme, setSelectedTheme }) {
           showIcon={false}
           tomato100
         />
-
         </div>
 
       </Main>

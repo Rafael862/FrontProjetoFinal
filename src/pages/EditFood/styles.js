@@ -2,6 +2,7 @@ import styled from "styled-components";
 import dropdownArrow from '../../assets/dropdown-arrow.svg';
 
 export const Container = styled.div`
+
   width: 100%;
   height: 100vh;
 

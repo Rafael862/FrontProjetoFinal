@@ -8,7 +8,6 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
 `;
-
 export const Form = styled.form`
   padding: 2.4rem;
 

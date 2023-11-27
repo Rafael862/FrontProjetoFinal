@@ -10,6 +10,7 @@ import { SearchInput } from '../../components/SearchInput';
 import searchIcon from '../../assets/icon-search.svg';
 
 export function MobileMenu({ className, id }) {
+  
   const { signOut } = useAuth();
   const { setSearch } = useContext(SearchContext);
 

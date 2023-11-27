@@ -23,6 +23,7 @@ export const Container = styled.div`
 `;
 
 export const Branding = styled.div`
+
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 1.4rem;

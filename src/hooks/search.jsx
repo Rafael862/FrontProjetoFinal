@@ -3,6 +3,7 @@ import { createContext, useState} from 'react';
 export const SearchContext = createContext();
 
 function SearchProvider({ children }) {
+  
   const [search, setSearch] = useState("");
 
   return (

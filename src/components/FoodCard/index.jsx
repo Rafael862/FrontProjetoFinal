@@ -147,6 +147,7 @@ export function FoodCard({ data, ...rest }) {
       <span>{data.price.toLocaleString("pt-BR", { style: "currency", currency: "BRL"})}</span>
 
       <div className="cta-container">
+        
         <div className="mobile-only">
           <Counter
             size="normal"

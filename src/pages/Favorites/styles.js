@@ -8,6 +8,7 @@ export const Container = styled.div`
 `;
 
 export const Main = styled.main` 
+
   padding: 3.6rem 2.4rem;
 
   display: flex;

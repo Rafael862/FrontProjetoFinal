@@ -82,6 +82,7 @@ export const Header = styled.div`
 `;
 
 export const Logout = styled.button`
+
   border: none;
   background: none;
 
@@ -89,4 +90,5 @@ export const Logout = styled.button`
   font-weight: 300;
   line-height: 140%;
   color: ${({ theme }) => theme.COLORS.LIGHT_300};
+
 `;

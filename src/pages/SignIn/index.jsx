@@ -14,7 +14,6 @@ export function SignIn({ selectedTheme, setSelectedTheme }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const { signIn } = useAuth();
-
   function toggleTheme(e) {
     e.preventDefault();
     setSelectedTheme((currentTheme) => currentTheme === dark ? light : dark);

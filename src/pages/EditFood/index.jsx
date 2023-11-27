@@ -277,6 +277,7 @@ export function EditFood({ selectedTheme, setSelectedTheme }) {
             dark800
             onClick={handleRemoveFood}
           />
+          
           <Button
             title="Salvar alterações"
             showicon={false}

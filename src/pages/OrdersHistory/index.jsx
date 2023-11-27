@@ -19,7 +19,7 @@ export function OrdersHistory({ selectedTheme, setSelectedTheme }) {
   const [search, setSearch] = useState(searchTitle || "");
 
   function formatDateTime(dateTimeString) {
-    const dateTime = new Date(dateTimeString);
+  const dateTime = new Date(dateTimeString);
 
     const formatDate = dateTime.toLocaleDateString("pt-BR", {
       day: "2-digit",

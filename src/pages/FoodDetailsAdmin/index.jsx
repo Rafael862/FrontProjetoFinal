@@ -60,6 +60,7 @@ export function FoodDetailsAdmin({ selectedTheme, setSelectedTheme }) {
         <div className="mobile-only" >
           <ButtonText title="voltar" size="normal" onClick={handleBack} />
         </div>
+        
         <div className="desktop-only" >
           <ButtonText title="voltar" size="large" onClick={handleBack} />
         </div>

@@ -10,7 +10,6 @@ export const Container = styled.div`
 
 export const Main = styled.main`
   padding: 2.4rem;
-
   display: flex;
   flex-direction: column;
   flex-grow: 1;

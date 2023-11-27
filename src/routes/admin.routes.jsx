@@ -1,5 +1,4 @@
 import { Routes, Route } from 'react-router-dom';
-
 import { HomeAdmin } from '../pages/HomeAdmin';
 import { FoodDetailsAdmin } from '../pages/FoodDetailsAdmin';
 import { EditFood } from '../pages/EditFood';

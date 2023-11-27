@@ -196,7 +196,6 @@ export function OrdersAdmin({ selectedTheme, setSelectedTheme }) {
           }
         </div>
       </Main>
-
       <Footer />
     </Container>
   );

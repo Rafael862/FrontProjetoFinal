@@ -149,6 +149,7 @@ export const Branding = styled.div`
 `;
 
 export const Logout = styled.button`
+
   background: none;
   border: none;
   display: flex;

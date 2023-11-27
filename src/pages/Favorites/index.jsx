@@ -11,6 +11,7 @@ import { Header } from '../../components/Header';
 import { Footer } from '../../components/Footer';
 
 export function Favorites({ selectedTheme, setSelectedTheme }) {
+  
   const { user } = useContext(AuthContext);
   const [favorites, setFavorites] = useState([]);
   const [foods, setFoods] = useState([]);

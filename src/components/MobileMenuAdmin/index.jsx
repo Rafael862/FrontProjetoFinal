@@ -12,6 +12,7 @@ import searchIcon from '../../assets/icon-search.svg';
 export function MobileMenuAdmin({ className, id }) {
   const { signOut } = useAuth();
   const { setSearch } = useContext(SearchContext);
+  
 
   const navigate = useNavigate();
 

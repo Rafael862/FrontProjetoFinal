@@ -29,7 +29,8 @@ export const Main = styled.main`
     border-radius: 3px;
     margin: 4.4rem auto;
 
-    background: linear-gradient(180deg, ${({ theme }) => theme.COLORS.GRADIENT_900} 0%, ${({ theme }) => theme.COLORS.GRADIENT_800} 100%);
+    background: linear-gradient(180deg, ${({ theme }) => theme.COLORS.GRADIENT_900} 0%,
+     ${({ theme }) => theme.COLORS.GRADIENT_800} 100%);
 
     display: grid;
     grid-template-columns: 45% 55%;

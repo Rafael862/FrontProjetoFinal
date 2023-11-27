@@ -1,7 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-
 import { FavoritesProvider } from '../hooks/favorites';
-
 import { Home } from '../pages/Home';
 import { FoodDetails } from '../pages/FoodDetails';
 import { Favorites } from '../pages/Favorites';

@@ -15,6 +15,7 @@ import { Counter } from '../../components/Counter';
 import { Button } from '../../components/Button';
 
 export function FoodDetails({ selectedTheme, setSelectedTheme }) {
+  
   const { user } = useContext(AuthContext);
   const [foods, setFoods] = useState([]);
   const [quantity, setQuantity] = useState(1);

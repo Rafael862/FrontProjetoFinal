@@ -5,7 +5,6 @@ export const Container = styled.span`
   font-weight: 500;
   line-height: 2.4rem;
   color: ${({ theme }) => theme.COLORS.LIGHT_100};
-
   background-color: ${({ theme }) => theme.COLORS.DARK_1000};
   border-radius: 5px;
 

@@ -10,6 +10,7 @@ export function Button({
   dark800,
   ...rest
 }) {
+  
   return (
     <Container
       type="button"

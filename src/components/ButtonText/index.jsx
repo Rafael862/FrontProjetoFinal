@@ -8,7 +8,9 @@ export function ButtonText({ title, size = "normal",...rest }) {
   return (
     <Container type="button" {...rest}>
       <MdArrowBackIosNew size={iconSize} />
-      <p style={{ fontSize }}>{title}</p>
+      <p 
+      style={{ fontSize }}>
+      {title}</p>
     </Container>
   );
 }

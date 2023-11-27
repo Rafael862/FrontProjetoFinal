@@ -6,6 +6,7 @@ import { Container } from './styles';
 import { api } from '../../services/api';
 
 export function FoodCardAdmin({ data, ...rest }) {
+  
   const imageUrl = `${api.defaults.baseURL}/files/${data.image}`;
 
   const navigate = useNavigate();

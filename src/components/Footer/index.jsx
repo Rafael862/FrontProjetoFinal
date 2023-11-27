@@ -2,6 +2,7 @@ import { Container, Branding } from './styles';
 
 export function Footer() {
   return (
+
     <Container>
       <Branding>
       <svg width="20" height="20" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -13,5 +14,6 @@ export function Footer() {
 
       <p>&copy; 2023 - Todos os direitos reservados.</p>
     </Container>
+    
   );
 }

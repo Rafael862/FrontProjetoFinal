@@ -17,6 +17,7 @@ import { Footer } from '../../components/Footer';
 SwiperCore.use([Navigation]);
 
 export function Home({ selectedTheme, setSelectedTheme }) {
+  
   const [foods, setFoods] = useState([]);
 
   const searchTitle = new URLSearchParams(location.search).get("title");

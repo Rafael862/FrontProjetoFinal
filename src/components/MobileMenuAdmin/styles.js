@@ -86,6 +86,7 @@ export const Header = styled.div`
 `;
 
 export const Logout = styled.button`
+
   border: none;
   background: none;
 

@@ -10,6 +10,7 @@ export function FavoritesProvider({ children }) {
   }
 
   function removeFavorite(food) {
+    
     setFavorites((prevFavorites) => prevFavorites.filter((item) => item.id !== food.id));
   }
 
