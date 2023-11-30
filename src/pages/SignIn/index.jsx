@@ -1,10 +1,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { MdOutlineDarkMode, MdOutlineLightMode } from 'react-icons/md';
 
 import { useAuth } from '../../hooks/auth';
 
-import { dark, light } from '../../styles/themes';
 import { Container, Branding, Form } from './styles';
 import logo from '../../assets/logo.svg';
 import { Input } from '../../components/Input';
@@ -14,10 +12,6 @@ export function SignIn({ selectedTheme, setSelectedTheme }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const { signIn } = useAuth();
-  function toggleTheme(e) {
-    e.preventDefault();
-    setSelectedTheme((currentTheme) => currentTheme === dark ? light : dark);
-  }
 
   function handleSignIn() {
     signIn({ email, password });
@@ -27,7 +21,7 @@ export function SignIn({ selectedTheme, setSelectedTheme }) {
     <Container>
       <div className="content-wrapper">
         <Branding>
-          <img src={logo} alt="logo com um polígono azul de seis lados" />
+          <img src={logo} alt="logomarca" />
           food explorer
         </Branding>
 

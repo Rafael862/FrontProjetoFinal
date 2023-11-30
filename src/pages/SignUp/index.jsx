@@ -1,10 +1,8 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { MdOutlineDarkMode, MdOutlineLightMode } from 'react-icons/md';
 
 import { api } from '../../services/api';
 
-import { dark, light } from '../../styles/themes';
 import { Container, Branding, Form } from './styles';
 import logo from '../../assets/logo.svg';
 import { Input } from '../../components/Input';
@@ -15,11 +13,6 @@ export function SignUp({ selectedTheme, setSelectedTheme }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
-
-  function toggleTheme(e) {
-    e.preventDefault();
-    setSelectedTheme((currentTheme) => currentTheme === dark ? light : dark);
-  }
 
   function handleSignUp() {
     if (!name || !email || !password) {
