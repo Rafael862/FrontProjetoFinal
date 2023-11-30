@@ -1,4 +1,6 @@
 import axios from 'axios';
 export const api = axios.create({
-  baseURL: "https://api-food-jlwu.onrender.com"
+  baseURL: "http://localhost:3333"
 }); 
+
+//https://api-food-jlwu.onrender.com

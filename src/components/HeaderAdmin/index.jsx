@@ -92,15 +92,6 @@ export function HeaderAdmin({ selectedTheme, setSelectedTheme }) {
           Lista de pedidos
         </Link>
 
-        <div className="desktop-only">
-          <button onClick={toggleTheme} className="themes-btn">
-            {selectedTheme === dark ? (
-              <MdOutlineLightMode size={24} />
-            ) : (
-              <MdOutlineDarkMode size={24} />
-            )}
-          </button>
-        </div>
 
         <Button tomato100="true" title="Novo prato" showicon={false} className="desktop-only button" as={Link} to="/new" />
 
@@ -109,15 +100,7 @@ export function HeaderAdmin({ selectedTheme, setSelectedTheme }) {
         </Logout>
       </div>
 
-      <div className="mobile-only">
-        <button onClick={toggleTheme} className="themes-btn">
-          {selectedTheme === dark ? (
-            <MdOutlineLightMode size={24} />
-          ) : (
-            <MdOutlineDarkMode size={24} />
-          )}
-        </button>
-      </div>
+      
     </Container>
   );
 }

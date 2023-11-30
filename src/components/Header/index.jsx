@@ -113,16 +113,6 @@ export function Header({ selectedTheme, setSelectedTheme }) {
           Histórico de pedidos
         </Link>
 
-        <div className="desktop-only">
-          <button onClick={toggleTheme} className="themes-btn">
-            {selectedTheme === dark ? (
-              <MdOutlineLightMode size={24} />
-            ) : (
-              <MdOutlineDarkMode size={24} />
-            )}
-          </button>
-        </div>
-
         {
           order &&
           <Button
@@ -141,15 +131,7 @@ export function Header({ selectedTheme, setSelectedTheme }) {
 
       </div>
 
-      <div className="mobile-only">
-        <button onClick={toggleTheme} className="themes-btn">
-          {selectedTheme === dark ? (
-            <MdOutlineLightMode size={24} />
-          ) : (
-            <MdOutlineDarkMode size={24} />
-          )}
-        </button>
-      </div>
+      
 
       <Link to="/order">
         <div className="icon-receipt-container mobile-only">

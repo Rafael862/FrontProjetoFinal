@@ -34,17 +34,17 @@ export function SignIn({ selectedTheme, setSelectedTheme }) {
         <Form>
           <h1 className="desktop-only">Faça login</h1>
           <div>
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email">Email:</label>
             <Input
               type="text"
               id="email"
-              placeholder="Exemplo: exemplo@exemplo.com.br"
+              placeholder="Exemplo: email@email.com.br"
               onChange={e => setEmail(e.target.value)}
             />
           </div>
 
           <div>
-            <label htmlFor="password">Senha</label>
+            <label htmlFor="password">Senha:</label>
             <Input
               type="password"
               id="password"
@@ -66,13 +66,7 @@ export function SignIn({ selectedTheme, setSelectedTheme }) {
             </Link>
           </p>
 
-          <button onClick={toggleTheme} className="themes-btn">
-            {selectedTheme === dark ? (
-              <MdOutlineLightMode size={24} />
-            ) : (
-              <MdOutlineDarkMode size={24} />
-            )}
-          </button>
+          
         </Form>
       </div>
     </Container>

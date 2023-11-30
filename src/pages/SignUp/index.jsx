@@ -51,27 +51,27 @@ export function SignUp({ selectedTheme, setSelectedTheme }) {
         <Form>
           <h1>Crie sua conta</h1>
           <div>
-            <label htmlFor="name">Seu nome</label>
+            <label htmlFor="name">Seu nome:</label>
             <Input
               type="text"
               id="name"
-              placeholder="Exemplo: Maria da Silva"
+              placeholder="Exemplo: Rafael Ferreira"
               onChange={e => setName(e.target.value)}
             />
           </div>
 
           <div>
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email">Email:</label>
             <Input
               type="text"
               id="email"
-              placeholder="Exemplo: exemplo@exemplo.com.br"
+              placeholder="Exemplo: email@email.com.br"
               onChange={e => setEmail(e.target.value)}
             />
           </div>
 
           <div>
-            <label htmlFor="password">Senha</label>
+            <label htmlFor="password">Senha:</label>
             <Input
               type="password"
               id="password"
@@ -93,13 +93,7 @@ export function SignUp({ selectedTheme, setSelectedTheme }) {
             </Link>
           </p>
 
-          <button onClick={toggleTheme} className="themes-btn">
-            {selectedTheme === dark ? (
-              <MdOutlineLightMode size={24} />
-            ) : (
-              <MdOutlineDarkMode size={24} />
-            )}
-          </button>
+          
         </Form>
       </div>
     </Container>
